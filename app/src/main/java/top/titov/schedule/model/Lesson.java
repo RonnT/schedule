@@ -1,5 +1,7 @@
 package top.titov.schedule.model;
 
+import top.titov.schedule.helper.LessonHelper;
+
 /**
  * Created by Roman on 07.01.2016.
  */
@@ -32,5 +34,9 @@ public class Lesson {
 
     public String getLecturer() {
         return lecturer;
+    }
+
+    public String getTime(){
+        return LessonHelper.getLessonTime(number);
     }
 }
